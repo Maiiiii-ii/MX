@@ -1,0 +1,115 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #2C353B;
+    
+    font-family:"Arial",  sans-serif;
+}
+.yeshou{
+    display:flex;
+    flex-wrap: wrap;
+    position:fixed;
+    top:20px;
+    left:10px;    
+}
+.ss{
+    height: 31px;
+    /* 搜索框颜色 */
+    background: #656f83;
+    /* 搜索框弧度 */
+    border-radius: 40px;
+    
+}
+
+#unistra{
+    width: 150px;
+    height: 60px;
+}
+ #sstp{/*搜索图片 */
+    width: 20px;
+}
+.ss:hover>.ssnr-txt{
+    /* 搜索框长度 */
+    width: 200px;
+    padding: 0px 15px;
+}
+/* 鼠标放搜索上背景变色 */
+.ss:hover>.ss-btn{
+    background: white;
+}
+/* 搜索框 */
+.ss-btn{
+    background: #656f83;
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+/* 搜索框文字 */
+.ssnr-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 15px;
+    transition: 0.4s;
+    line-height: 31px;
+    width: 0px;
+}
+
+/* 鼠标放搜索时的动画 */
+.ss a::before {
+     content: 'GO!';/*内容：麦 */
+    position: absolute;
+    display: block;
+    font-size: 20px;
+    background-color: #a27554;
+    padding: 5px 20px;
+    top: -10px;
+    border-radius: 10px;
+    transition: 1s;
+    opacity: 0;
+    animation: go .5s infinite ease;/*动画速度逐渐变慢：麦*/
+} 
+
+/* 鼠标悬停动画复现 */
+.ss a:hover::before{
+    top: -20px;
+    opacity: 1;
+} 
+ @keyframes go {/*动画 动作设置*/
+    0%{
+        transform: rotate(0deg);
+    }
+    30%{
+        transform: rotate(8deg);
+    }
+    60%{
+        transform: rotate(-8deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    } 
+}
+h1{
+    text-align:center;
+    font-size: 50px;
+    color: #c73e3a;
+    padding-top: 40px;
+    padding-bottom: 0px; 
+}
+
+/* 加一条分割线 */
+.xian{
+    border-bottom: 1px solid #BC836B;
+    padding-bottom: 0px;
+}

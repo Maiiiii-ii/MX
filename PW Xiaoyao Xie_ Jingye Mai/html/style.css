@@ -1,0 +1,163 @@
+/*
+NOM :MAI
+Prénom :jingye
+
+NOM :xie
+Prénom :xiaoyao
+
+*/
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    display:flex;
+    background-color: #2C353B ;
+    font-family:"Arial",  sans-serif;
+    flex-direction: column;
+    
+}
+
+
+/*cadre global de puzzle */
+
+.tuile{
+    display:flex;
+    flex-wrap: wrap;
+    background: lemonchiffon;
+    width: 360px;
+    height: 360px;
+    position: relative;
+    top: 150px;
+    border: 4px solid #66889E;
+    border-radius: 2px;
+    margin:0 auto;
+    
+    
+}
+
+/* chaque carré du puzzle */
+.tuile div{
+    display:flex;
+    width: 88px;
+    height: 88px;
+    justify-content:center;
+    align-items:center;
+    background: pink;
+    list-style-type: none;
+    border:gray 1px dashed;
+    background-size: cover;
+    color: darkgray;
+    /* Plusieurs ombres d'arrière-plan pour le texte */
+    text-shadow: 1px 0 0 #fff,
+    -1px 0 0 #fff,
+    0 1px 0 #fff,
+    0 -1px 0 #fff,
+    1px 1px #fff,
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff;
+    font-size: 110%;
+    
+}
+
+/*le 15 est jaune */
+#bloc15{
+    background: lemonchiffon;
+}
+/* texte après la fin */
+#output{
+    display:flex;
+}
+
+/* conception de thème */
+#aaa{
+    border: 2px solid #66889E;
+    margin: 0;
+    font-size: 30px;
+    padding: 0; 
+    width: 700px;
+    height: 35px;
+    position:absolute;
+    top:50px;
+    left:0px; 
+    background-color: #faff72;
+    color: #c73e3a;
+}
+
+/* conception de clé de brouillage */
+#shuffle{
+    display:flex;
+    background-color: #ed3b2f;
+    
+    border-radius: 12px;
+    border:none;
+    color: gold;
+    position: relative;
+    top: 100px;
+
+}
+
+/* page précédente */
+#shangyi{
+    position: absolute;
+    bottom: 150px;
+    left: 50px;
+    cursor: pointer;
+    padding: 20px 100px;
+    border: 2px solid #BC836B;
+    background-color: #faff72;
+    transition: .1s; 
+    border-radius: 70px;   
+}
+
+/*  animation page précédente */
+#shangyi:hover{
+        background-color: red;
+        transition: .5s;
+        color: white;
+        position: absolute;
+        left: 10px;
+    }
+
+
+    /* Animation des clés de brouillage */
+#shuffle:hover{
+    background-color: #c85554;
+    color: white;
+
+}
+
+
+/*  bouton d'accueil*/
+#home{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 2%;
+    top: 10%;
+    border: 3px solid #66889E;
+    border-radius: 150px;
+    cursor: pointer;
+    color: white;
+}
+
+
+/* icône du bouton d'accueil */
+#home i{
+    position: relative;
+    text-align:center;
+    line-height:20px;
+    margin:4px 6px;
+    display:inline-block;
+    transition: .1s;
+}
+
+
+/* Animation d'accueil  */
+#home:hover{
+    color: red;
+    transition: .1s;
+}
+
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+NOM :MAI
+Prénom :jingye
+
+NOM :xie
+Prénom :xiaoyao
+-->
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Puzzle</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- thème -->
+    <div id="aaa">3.puzzle</div>
+    <!-- bouton d'accueil -->
+    <a onClick="window.open('../index.html','_self')" id="home"><i class="fa-sharp fa-solid fa-house"></i></a>
+    <div id="container">
+      <!-- bouton de brouillage -->
+      <button id="shuffle">Mélanger</button>
+      <!-- contenu du puzzle -->
+      <div class="tuile"  id="puzzlearea">
+        
+      </div>
+
+      <p id="output"></p>
+    </div> 
+    <!-- page précédente -->
+    <a onClick="window.open('2_2.html','_self')" id="shangyi">Avant</i></a>
+  </body>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+  crossorigin="anonymous"></script>
+  <script src="jeu.js"></script>
+</html>

@@ -1,0 +1,289 @@
+
+/* conception générale */
+body{
+    width: 100%;
+    margin: 0;
+    height: 200%;
+    font-family:"Arial",  sans-serif;
+    background-color: #2C353B;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* conception du titre */
+#aaa{
+    border: 2px solid #BC836B;
+    margin: 0;
+    font-size: 30px;
+    padding: 0; 
+    width: 700px;
+    height: 35px;
+    position:absolute;
+    top:20px;
+    left:0px; 
+    background-color: #faff72;
+    color: #c73e3a;
+}
+
+
+/* barre de défilement masquée */
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* contenu global */
+#container{
+    width: 100vw;
+    height: auto;
+}
+
+/* Définir le style du thème*/
+section{
+    height: 100vh;
+    background-color: #2C353B;
+    display: flex;
+}
+
+/* conception d'image de fond */
+.img{
+    background-size: auto;
+    background-position: center;
+    /* Arrière-plan recadré pour le défilement de la parallaxe */
+    overflow: hidden;
+    /* L'image de fond ne défile pas avec le défilement de la page */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    user-select: none;
+    cursor: default;
+}
+
+/* Image de fond */
+#img1{
+    background-image: url(img/0.0.jpg);
+}
+
+
+/* conception de partie de texte */
+#woaini{
+    width: 30%;
+    height: 5%;
+    padding: 0; 
+    position: absolute;
+    top: 54%;
+    text-align: center;
+}
+
+
+/* afficher la conception de la pièce */
+#zhuti{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -50%;
+}
+
+/* conception de bouton */
+.anniu{
+    width: 50px;
+    height: 50px;
+    border-radius: 150px;
+    margin: 40px ;
+    transition: .5s;
+}
+
+
+/* animation de bouton */
+.anniu:hover{
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    transition: .5s;
+    background-color: aqua;
+}
+
+
+/* L'image globale est masquée */
+.yi{
+    display: none;
+}
+.e{
+    display: none;
+}
+.san{
+    display: none;
+}
+
+
+
+/* par position d'image */
+#yi-1{
+    position: absolute;
+    z-index: 1;
+    top: 500px;
+}
+
+#yi-2{
+    position: absolute;
+    z-index: 1;
+    top: 1300px;
+    right: 20px;
+}
+
+#yi-3{
+    position: absolute;
+    z-index: 1;
+    top: 1500px;
+}
+
+#e-1{
+    position: absolute;
+    z-index: 1;
+    top: 1100px;
+    left: 130px;
+}
+
+#e-2{
+    position: absolute;
+    z-index: 1;
+    top: 800px;
+    right: 130px;
+    width: 500px;
+}
+
+#san-1{
+    position: absolute;
+    z-index: 1;
+    top: 1550px;
+    left: 500px;
+}
+#san-2{
+    position: absolute;
+    z-index: 1;
+    top: 900px;
+    right: 1%;
+}
+#san-3{
+    position: absolute;
+    z-index: 1;
+    top: 650px;
+    left: 50px;
+}
+
+
+
+/* texte caché */
+#diyishiqi{
+    display: none;
+}
+
+#dieshiqi{
+    display: none;
+}
+
+#disanshiqi{
+    display: none;
+}
+
+/* conception rapide */
+#jiesao{
+    display: block;
+    color: #151c20;
+}
+
+
+/* icône dans le bouton */
+.anniu i{
+    font-size:45px;
+}
+
+/* Présenter le style général */
+#shiqi{
+    color: #BC836B;
+    position: relative;
+    top: 300%;
+    font-size: 30px;
+}
+
+/* page d'accueil */
+#home{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 2%;
+    top: 10%;
+    border: 3px solid #BC836B;
+    border-radius: 150px;
+    cursor: pointer;
+    color: white;
+}
+
+
+/* Animations à domicile */
+#home i{
+    position: relative;
+    text-align:center;
+    line-height:20px;
+    margin:4px 6px;
+    display:inline-block;
+    transition: .1s;
+    
+}
+
+/* page suivante */
+#xiayi{
+    position: absolute;
+    bottom: 150px;
+    right: 50px;
+    cursor: pointer;
+    padding: 20px 100px;
+    border: 2px solid #BC836B;
+    background-color: #faff72;
+    border-radius: 70px;
+}
+/* page précédente */
+#shangyi{
+        position: absolute;
+        bottom: 150px;
+        left: 50px;
+        cursor: pointer;
+        padding: 20px 100px;
+        border: 2px solid #BC836B;
+        background-color: #faff72;
+        border-radius: 70px;
+    }
+        
+
+/* animation de page suivante*/
+#xiayi:hover{
+        background-color: red;
+        color: white;
+        transition: .5s;
+        position: absolute;
+        bottom: 150px;
+        right: 10px;
+    }
+
+/*animation de page précédente  */
+#shangyi:hover{
+        background-color: red;
+        color: white;
+        transition: .5s;
+        position: absolute;
+        bottom: 150px;
+        left: 10px;
+    }
+
+/* Animation du bouton d'accueil */
+#home:hover{
+    color: red;
+    transition: .1s;
+}
+
