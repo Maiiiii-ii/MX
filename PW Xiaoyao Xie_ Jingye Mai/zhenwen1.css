@@ -27,28 +27,28 @@ Prénom :xiaoyao
     top:20%;
     /* left:10%;  */
     right: 30%;
-    /* 隐藏后面的图片 */
+    /* cacher l'image suivante */
     overflow: hidden;
 
 }
 #imglst{
-    /* 图片大小*数量=这个值 */
+    /* Taille de l'image * nombre = taille totale de la toile */
     width: 6400px;
     height: 400px;
 
 }
 #imglst img{
-    /* 图片大小 */
+    /* Taille de l'image */
     width: 800px;
     height: 400px;
 
 }
 #imglst li{
-    /* 横着 */
+    /* de côté */
     float: left;
 }
 
-/* 轮播图上一页 */
+/* carrousel page précédente */
 .shang{
     background: #BC836B;
     width: 40px;
@@ -59,11 +59,11 @@ Prénom :xiaoyao
     position: absolute;
     left:5px;
     top:45%;
-    /* 鼠标上去变手指 */
+    /* pointeur de la souris */
     cursor: pointer;
 }
 
-/* 轮播图下一页 */
+/* Page suivante du carrousel */
 .xia{
     background: #BC836B;
     width: 40px;
@@ -74,11 +74,11 @@ Prénom :xiaoyao
     position: absolute;
     right:5px;
     top:45%;
-    /* 鼠标上去变手指 */
+    /* pointeur de la souris */
     cursor: pointer;
 }
 
-/* 轮播图下部数字设计 */
+/* Conception numérique du bas du carrousel */
 #iconlst{
     position: absolute;
     bottom: 10px;
@@ -98,7 +98,7 @@ Prénom :xiaoyao
     
 } 
 
-/* 右边列表 */
+/* liste de droite */
 #liebiao{
     margin: 0;
 
@@ -107,10 +107,10 @@ Prénom :xiaoyao
     height: 400px;
     position:fixed;
     top:150px;
-    /* 隐藏右边圆角 */
+    /* masquer le congé de droite */
     right  :-45px; 
 }
-/* 每个列的内部设计 */
+/* Conception interne de chaque colonne */
 #liebiaopai li{
     height: 80px;
 
@@ -128,7 +128,7 @@ Prénom :xiaoyao
     color: #66889E;
 }
 
-/* 更好的回馈 */
+/* meilleure rétroaction */
 #liebiaopai li:hover{
     background-color: #F29a76;
     color:white;
@@ -136,7 +136,7 @@ Prénom :xiaoyao
 }
 
 
-/* 左上角外部链接图标 */
+/* Icône de lien externe dans le coin supérieur gauche */
 .tubiao a{
     font-size:20px;
     color:#fff;
@@ -150,7 +150,7 @@ Prénom :xiaoyao
     text-align:center;
 }
 
-/* 鼠标悬停动画设计 */
+/* conception d'animation au survol de la souris */
 .tubiao a::before, .tubiao a::after{
     content:"";
     position: absolute;
@@ -162,7 +162,7 @@ Prénom :xiaoyao
     transition: .1s linear;
 }
 
-/* 动画运行 */
+/* course d'animation */
 .tubiao a:hover{
     transform: scale(.8);
 }

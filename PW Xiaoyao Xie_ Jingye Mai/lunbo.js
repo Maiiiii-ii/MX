@@ -1,29 +1,28 @@
-var dshang= document.querySelector('.shang');//定义函数，选择css的这个选择向
+var dshang= document.querySelector('.shang');//Définissez la fonction, sélectionnez cette option de css pour
 var dxia= document.querySelector('.xia');
 var esico = document.getElementById('iconlst').getElementsByTagName('li');
 var eiconlst= document.querySelector('#iconlst');
 var left =0;
 var t;
 run();
-function run(){//轮播动画
-    if (left <= -5600){//画布长度重置循环
+function run(){//animation carrousel
+    if (left <= -5600){//Boucle de réinitialisation de la longueur de la toile
         left=0
     }
     var m=Math.floor(-left/800);
-    imglst.style.marginLeft= left + 'px';//不断增加px做出滑动效果
-    var x = (left%800 == 0) ? x = 1200 : x = 10;//停顿1200毫秒，
-    //笔记：left不断减，捡=减到-800，x=1200停顿1200毫秒否者x=10
+    imglst.style.marginLeft= left + 'px';//Augmentez constamment le px pour créer un effet de glissement
+    var x = (left%800 == 0) ? x = 1200 : x = 10;//Pause de 1200 millisecondes,
+    //Remarques : gauche continue de diminuer, ramasser = diminuer jusqu'à -800, x=1200 pause de 1200 ms, sinon x=10
     left -= 10;
     icochange(m);
     t = setTimeout(run,x);
-    // icochange(m);
 }
-function imgchange(n){//定位图片
+function imgchange(n){//image de positionnement
     let lt = -(n*800);
     imglst.style.marginLeft=lt + 'px';
     left = lt;
 }
-dshang.onclick = function(){//点击触发函数
+dshang.onclick = function(){//cliquez sur la fonction de déclenchement
     let shangyi = Math.floor(-left/800)-1;
     if(shangyi==-1){
         shangyi=6;
@@ -38,7 +37,7 @@ dxia.onclick = function(){
     imgchange(xiayi);
 }
 
-function icochange(m){//轮播图下方背景颜色跟着数字轮换
+function icochange(m){//La couleur de fond en bas du carrousel tourne avec le nombre
     for(let index =0 ;index<esico.length;index++){
         esico[index].style.backgroundColor='';
     }
@@ -46,7 +45,7 @@ function icochange(m){//轮播图下方背景颜色跟着数字轮换
         esico[m].style.backgroundColor = '#13393E';
     }
 }
-eiconlst.onclick = function(){//点击换色换图
+eiconlst.onclick = function(){//Cliquez pour changer de couleur
     var tg = event.target;
     let icon = tg.innerHTML - 1;
     imgchange(icon);

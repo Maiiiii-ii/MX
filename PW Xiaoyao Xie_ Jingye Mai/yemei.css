@@ -16,9 +16,9 @@ body{
 }
 .ss{
     height: 31px;
-    /* 搜索框颜色 */
+    /* couleur du champ de recherche */
     background: #656f83;
-    /* 搜索框弧度 */
+    /* champ de recherche radian */
     border-radius: 40px;
     
 }
@@ -27,19 +27,19 @@ body{
     width: 150px;
     height: 60px;
 }
- #sstp{/*搜索图片 */
+ #sstp{/*image de recherche */
     width: 20px;
 }
 .ss:hover>.ssnr-txt{
-    /* 搜索框长度 */
+    /* longueur du champ de recherche */
     width: 200px;
     padding: 0px 15px;
 }
-/* 鼠标放搜索上背景变色 */
+/* La couleur de fond change lorsque la souris est placée sur la recherche */
 .ss:hover>.ss-btn{
     background: white;
 }
-/* 搜索框 */
+/* barre de recherche */
 .ss-btn{
     background: #656f83;
     float: right;
@@ -52,7 +52,7 @@ body{
     transition: 0.4s;
 }
 
-/* 搜索框文字 */
+/* texte du champ de recherche */
 .ssnr-txt{
     border: none;
     background: none;
@@ -66,9 +66,9 @@ body{
     width: 0px;
 }
 
-/* 鼠标放搜索时的动画 */
+/* Animation lorsque la souris est placée pour rechercher */
 .ss a::before {
-     content: 'GO!';/*内容：麦 */
+     content: 'GO!';/*contenu */
     position: absolute;
     display: block;
     font-size: 20px;
@@ -78,15 +78,15 @@ body{
     border-radius: 10px;
     transition: 1s;
     opacity: 0;
-    animation: go .5s infinite ease;/*动画速度逐渐变慢：麦*/
+    animation: go .5s infinite ease;/*La vitesse d'animation ralentit progressivement*/
 } 
 
-/* 鼠标悬停动画复现 */
+/* Reproduction de l'animation de la souris */
 .ss a:hover::before{
     top: -20px;
     opacity: 1;
 } 
- @keyframes go {/*动画 动作设置*/
+ @keyframes go {/*Paramètres des actions d'animation*/
     0%{
         transform: rotate(0deg);
     }
@@ -108,7 +108,7 @@ h1{
     padding-bottom: 0px; 
 }
 
-/* 加一条分割线 */
+/* ajouter une ligne de séparation */
 .xian{
     border-bottom: 1px solid #BC836B;
     padding-bottom: 0px;
